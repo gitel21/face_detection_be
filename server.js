@@ -1,4 +1,5 @@
 const express = require ('express');
+require('dotenv').config()
 const bodyParser = require ('body-parser');
 const bcrypt = require ('bcrypt');
 const cors = require('cors');
@@ -14,10 +15,10 @@ const app = express();
 const db = knex({
    client: 'pg',
    connection: {
-     host : '127.0.0.1', 
-     user : 'eileenli',
-     password : '',
-     database : 'face-detection'
+     host : process.env.HOST, 
+     user : process.env.USER,
+     password : process.env.PASSWORD,
+     database : process.env.DATABASE
    }
  });
 

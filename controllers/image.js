@@ -1,4 +1,4 @@
-const PAT = '15fe0f2c689344c4b999e5c475ebac46';
+const PAT = process.env.PAT;
 const USER_ID = 'clarifaiapiel21';
 const APP_ID = 'face-detection';
 const MODEL_ID = 'face-detection';
