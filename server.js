@@ -15,13 +15,13 @@ const app = express();
 const db = knex({
    client: 'pg',
    connection: {
-    //  connectionString: process.env.DATABASE_URL,
-    //  ssl: true,
-     host : process.env.HOST, 
-     port: 5432,
-     user : process.env.USER,
-     password : process.env.PASSWORD,
-     database : process.env.DATABASE
+     connectionString: process.env.DATABASE_URL,
+     ssl: true,
+    //  host : process.env.HOST, 
+    //  port: 5432,
+    //  user : process.env.USER,
+    //  password : process.env.PASSWORD,
+    //  database : process.env.DATABASE
    }
  });
 
