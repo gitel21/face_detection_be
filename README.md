@@ -1,1 +1,1 @@
-# face_detection_be
+# A back-end server using Node.js with Express
